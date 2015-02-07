@@ -6,10 +6,10 @@
 
     <meta property="og:title" content="ioschool.is" />
     <meta property="og:site_name" content="ioschool.is" />
-    <meta property="og:url" content="http://ioschool.is/" />
-    <meta property="og:description" content="open source curiculuum on input/output magic" />
-    <meta property="og:image" content="http://ioschool.is//images/favicon.png" />
-    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://ioschool.is" />
+    <meta property="og:description" content="Open source curiculuum on input/output magic." />
+    <meta property="og:image" content="http://ioschool.is/images/favicon.png" />
+    <meta property="og:type" content="website" />
 
     <title>ioschool.is</title>
 
@@ -18,34 +18,74 @@
     
     <link rel="stylesheet" type="text/css" href="./bundle.css" />
     
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300" />
-    
 
   </head>
   <body>
+    <a class='fork-me' href='http://github.com/ioschool/ioschool.is'>
+      Fork me on GitHub
+    </a>
 
-
-    <main>
-      <header>
-  <h1>ioschool.is</h1>
-  <p>open source curiculuum on input/output magic</p>
+    <main class="container">
+      
+      <header class="page-header">
+  <h1>
+    ioschool.is
+  </h1>
+  <p>
+    Open source curiculuum on input/output magic.
+  </p>
 </header>
+<section id="scan">
+  <h2>
+    Overview of our adventure
+  </h2>
+  <p>
+    ioschool is an experiment in open source computer science education. It is based heavily on the existing work of the <a href="http://nodeschool.io">Node School</a> and <a href="http://cyber.wizard.institute">Cyber Wizard Institute</a> curiculuums. We're making this up as we go, if you have feedback please let us know at <a href="https://github.com/ioschool/discussions/issues">ioschool/discussions</a>.
+  </p>
+  <p>
+    During our ioschool journey, we will be learning how to harness the magic of signals and pixels to produce art magic and mad science. While there isn't an explicit focus on learning for the sake of being hired in industry, rest assured that if you become proficient at what is being taught, you will ascend to be a higher level wizard with more than enough skills to pay the bills.
+  </p>
+  <p>
+    While programming can be done in a multitude of languages across many platforms, we will be focusing on javascript (using <a href="http://nodejs.org">Node.js</a>) on Unix-based (Linux or Mac OS) and web browser environments.
+  </p>
+</section>
 
-      <article class="resources">
+<section id="setup">
+  <h2>
+    Gearing up for the journey ahead
+  </h2>
+  <p>
+    To begin, we first need a computer that runs Linux or Mac OS. If you have Windows, we will help you install Linux - but you have to be willing to have Linux!
+  </p>
+  <p>
+    Then, you need to follow <a href="/guides/install-js">our guide to install Node.js</a>.
+  </p>
+  <p>
+    Next, you need a <strong>Text Editor</strong>. If you don't have one already, you may want one for editing code. A few options: <a href="http://www.atom.io/">Atom</a> <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://lighttable.com/">Light Table</a>, <a href="http://macromates.com/download">TextMate</a>, <a href="http://brackets.io/">Brackets</a>.
+  </p>
+</section>
+
+<section id="start">
+  <h2>
+    Starting on your path
+  </h2>
+  <p>
+    Choose a magic art to start the journey.
+  </p>
+  <ul>
   
-  <section
-    class=""
-    
-  >
-    
-    <h2 id="-js101-js101-"><a href="/js101">js101</a></h2>
-<p>A cyberwizard&#39;s introduction to javascript magic.</p>
-
-    
-  </section>
+    <li>
+      <a href="/art-of-async">
+        The Art of Async
+      </a>
+      : An introduction to async programming with Node.js
+    </li>
   
 </article>
+  </ul>
+</section>
 
+      
     </main>
 
     
@@ -60,7 +100,7 @@
   (function() {
     var u="//analytics.dinosaur.is/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 3]);
+    _paq.push(['setSiteId', 4]);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
