@@ -6535,16 +6535,23 @@ button.close {
   right: 0.5rem;
   z-index: 10;
 }
-header.page {
+main > header {
   display: flex;
 }
-header.page .icon {
+main > header .icon {
   width: 10%;
   display: inline-block;
   margin: 0 3%;
 }
-header.page .text {
+main > header .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+main > footer {
+  display: flex;
+  justify-content: center;
+}
+main > footer .license {
+  margin: 0 0 0.75% 0;
 }
