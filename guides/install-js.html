@@ -4,20 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="Guide to Installing Node.js" />
+    <meta property="og:title" content="Guide to Installing io.js" />
     <meta property="og:site_name" content="ioschool.is" />
     <meta property="og:url" content="http://ioschool.is/guides/install-js" />
-    <meta property="og:description" content="how to install Node.js for use in ioschool." />
-    <meta property="og:image" content="http://ioschool.is/guides/install-js/images/favicon.png" />
+    <meta property="og:description" content="An i/o school guide on how to install io.js." />
+    <meta property="og:image" content="http://ioschool.is/guides/install-js/images/icon.png" />
     <meta property="og:type" content="article" />
 
-    <title>Guide to Installing Node.js</title>
+    <title>Guide to Installing io.js</title>
 
     <link rel="shortcut icon" href="favicon.ico" />
 
-    
     <link rel="stylesheet" type="text/css" href="../bundle.css" />
-    
 
   </head>
   <body>
@@ -26,14 +24,15 @@
     </a>
 
     <main class="container">
-      
-      <h1 id="guide-to-installing-node-js-http-nodejs-org-">Guide to Installing <a href="http://nodejs.org">Node.js</a></h1>
-<p>So you want to install Node.js, huh. Great! ＼(＾▽＾)／</p>
-<p>We&#39;re going to use <a href="https://github.com/creationix/nvm">nvm</a> (Node Version Manager) to make this easy and awesome.</p>
-<h2 id="installation">Installation</h2>
-<p>First you&#39;ll need to make sure your system has a c++ compiler. For OSX, XCode will work, for Ubuntu, the build-essential and libssl-dev packages work.</p>
-<h3 id="scripted-install">Scripted install</h3>
-<p>To install you could use the <a href="https://github.com/creationix/nvm/blob/v0.23.3/install.sh">install script</a> using cURL:</p>
+      <h1 id="guide-to-installing-io-js-https-iojs-org-">Guide to Installing <a href="https://iojs.org">io.js</a></h1>
+<p>Are you ready to install <a href="https://iojs.org">io.js</a>? Great! ＼(＾▽＾)／</p>
+<p>We&#39;re going to use <a href="https://github.com/creationix/nvm">nvm (Node Version Manager)</a>) to make this easy and awesome.</p>
+<h2 id="pre-requisities">Pre-requisities</h2>
+<p>In order to install <a href="https://iojs.org">io.js</a>, you&#39;ll need to make sure your system has a c++ compiler.</p>
+<p>For Mac OS X, XCode will work, for Ubuntu, the build-essential and libssl-dev packages work.</p>
+<h2 id="nvm-install">nvm Install</h2>
+<h3 id="automatic">Automatic</h3>
+<p>To install nvm you could use the <a href="https://github.com/creationix/nvm/blob/v0.23.3/install.sh">install script</a> using cURL:</p>
 <pre><code>curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
 </code></pre><p>or Wget:</p>
 <pre><code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
@@ -41,7 +40,7 @@
 <p>You can customize the install source, directory and profile using the <code>NVM_SOURCE</code>, <code>NVM_DIR</code>, and <code>PROFILE</code> variables.
 Eg: <code>curl ... | NVM_DIR=/usr/local/nvm bash</code> for a global install.</p>
 <p><sub><em>NB. The installer can use <code>git</code>, <code>curl</code>, or <code>wget</code> to download <code>nvm</code>, whatever is available.</em></sub></p>
-<h3 id="manual-install">Manual install</h3>
+<h3 id="manual">Manual</h3>
 <p>For manual install create a folder somewhere in your filesystem with the <code>nvm.sh</code> file inside it. I put mine in a folder called <code>nvm</code>.</p>
 <p>Or if you have <code>git</code> installed, then just clone it, and check out the latest version:</p>
 <pre><code>git clone https://github.com/creationix/nvm.git ~/.nvm &amp;&amp; cd ~/.nvm &amp;&amp; git checkout `git describe --abbrev=0 --tags`
@@ -49,38 +48,34 @@ Eg: <code>curl ... | NVM_DIR=/usr/local/nvm bash</code> for a global install.</p
 <pre><code>source ~/.nvm/nvm.sh
 </code></pre><p>I always add this line to my <code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.zshrc</code> file to have it automatically sourced upon login.
 Often I also put in a line to use a specific version of node.</p>
-<h2 id="usage">Usage</h2>
-<p>Once we have <code>nvm</code> installed, we can use it to install the latest stable version of Node.js.</p>
-<pre><code>nvm install stable
-nvm use stable
-nvm alias default stable
-</code></pre><p>You should now be able to run <code>node</code> (a Node.js interpreter) or <code>npm</code> (the Node Package Manager).</p>
-<p>For more usage instructions, see the <a href="https://github.com/creationix/nvm/blob/master/README.markdown">nvm README</a>.</p>
-<p>Woooo, welcome to the wild world of Node.js, let the madness begin!</p>
+<p>For more help or instructions, see the <a href="https://github.com/creationix/nvm/blob/master/README.markdown">nvm README</a>.</p>
+<h2 id="io-js-install">io.js Install</h2>
+<p>Once we have <code>nvm</code> installed, we can use it to install the latest stable version of io.js.</p>
+<pre><code>nvm install iojs
+nvm use iojs
+nvm alias default iojs
+</code></pre><p>You should now be able to run <code>node</code> (a Node JavaScript interpreter) or <code>npm</code> (the Node Package Manager).</p>
+<p>Woooo, welcome to the wild world of io.js, let the festivities begin!</p>
 <p>(((o(<em>ﾟ▽ﾟ</em>)o)))</p>
 
-      
     </main>
 
-    
     <script type="text/javascript" src="../bundle.js"></script>
-    
 
     <!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.dinosaur.is/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 4]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//analytics.dinosaur.is/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.dinosaur.is/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 4]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//analytics.dinosaur.is/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
   </body>
 </html>

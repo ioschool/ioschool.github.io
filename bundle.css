@@ -6531,6 +6531,20 @@ button.close {
 }
 .fork-me {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+}
+header.page {
+  display: flex;
+}
+header.page .icon {
+  width: 10%;
+  display: inline-block;
+  margin: 0 3%;
+}
+header.page .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
