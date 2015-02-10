@@ -27,10 +27,11 @@
       <h1 id="guide-to-installing-io-js-https-iojs-org-">Guide to Installing <a href="https://iojs.org">io.js</a></h1>
 <p>Are you ready to install <a href="https://iojs.org">io.js</a> (a <a href="http://thechangelog.com/139/">spork</a> of <a href="https://nodejs.org">Node.js</a>)? Great! ＼(＾▽＾)／</p>
 <p>We&#39;re going to use <a href="https://github.com/creationix/nvm">nvm (Node Version Manager)</a>) to make this easy and awesome.</p>
-<h2 id="pre-requisities">Pre-requisities</h2>
+<h2 id="0-pre-requisities">0. Pre-Requisities</h2>
 <p>In order to install <a href="https://iojs.org">io.js</a>, you&#39;ll need to make sure your system has a c++ compiler.</p>
 <p>For Mac OS X, XCode will work, for Ubuntu, the build-essential and libssl-dev packages work.</p>
-<h2 id="nvm-install">nvm Install</h2>
+<hr>
+<h2 id="1-install-nvm">1. Install nvm</h2>
 <h3 id="automatic">Automatic</h3>
 <p>To install nvm you could use the <a href="https://github.com/creationix/nvm/blob/v0.23.3/install.sh">install script</a> using cURL:</p>
 <pre><code>curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
@@ -46,7 +47,8 @@
 </code></pre><p>I always add this line to my <code>~/.bashrc</code>, <code>~/.profile</code>, or <code>~/.zshrc</code> file to have it automatically sourced upon login.
 Often I also put in a line to use a specific version of node.</p>
 <p>For more help or instructions, see the <a href="https://github.com/creationix/nvm/blob/master/README.markdown">nvm README</a>.</p>
-<h2 id="io-js-install">io.js Install</h2>
+<hr>
+<h2 id="2-install-io-js">2. Install io.js</h2>
 <p>Once we have <code>nvm</code> installed, we can use it to install the latest stable version of io.js.</p>
 <pre><code>nvm install iojs
 nvm use iojs
