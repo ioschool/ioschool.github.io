@@ -37,9 +37,6 @@
 </code></pre><p>or Wget:</p>
 <pre><code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
 </code></pre><p><sub>The script clones the nvm repository to <code>~/.nvm</code> and adds the source line to your profile (<code>~/.bash_profile</code>, <code>~/.zshrc</code> or <code>~/.profile</code>).</sub></p>
-<p>You can customize the install source, directory and profile using the <code>NVM_SOURCE</code>, <code>NVM_DIR</code>, and <code>PROFILE</code> variables.
-Eg: <code>curl ... | NVM_DIR=/usr/local/nvm bash</code> for a global install.</p>
-<p><sub><em>NB. The installer can use <code>git</code>, <code>curl</code>, or <code>wget</code> to download <code>nvm</code>, whatever is available.</em></sub></p>
 <h3 id="manual">Manual</h3>
 <p>For manual install create a folder somewhere in your filesystem with the <code>nvm.sh</code> file inside it. I put mine in a folder called <code>nvm</code>.</p>
 <p>Or if you have <code>git</code> installed, then just clone it, and check out the latest version:</p>
